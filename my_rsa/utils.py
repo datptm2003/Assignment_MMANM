@@ -117,7 +117,7 @@ def inverse(u, v):
     return u1
 
 def gcd(x,y):
-    """Greatest Common Denominator of :data:`x` and :data:`y`.
+    """Greatest Common Divisor of :data:`x` and :data:`y`.
     """
     x = abs(x)
     y = abs(y)
@@ -209,20 +209,3 @@ def random_prime_with_n_bits(n_bits):
         if is_prime(number):
             break
     return number
-
-def random_prime_with_gap(p, key_bits):
-    lower_bound = 2 ** (key_bits // 2 - 5)
-    p_bits = p.bit_length()
-    q_bits = key_bits - p_bits
-    compare = p_bits > q_bits  # True: p > q, False: p < q
-    while True:
-        res = random_at_most_n_bits(q_bits)
-        if compare:
-            if p - res < lower_bound:
-                continue
-        else:
-            if res - p < lower_bound:
-                continue
-        if is_prime(res):
-            break
-    return res

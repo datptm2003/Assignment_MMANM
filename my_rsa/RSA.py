@@ -91,16 +91,14 @@ class RSA():
             plaintext = plaintext.encode()
             m = utils.bytes_to_long(plaintext)
         # return utils.long_to_bytes(self.encrypt(m))
-        print(f"::{m}")
         return self.encrypt(m)
 
     def decrypt_ciphertext(self, c):
         # if type(ciphertext) is str:
         #     ciphertext = ciphertext.encode()
         # c = utils.bytes_to_long(ciphertext)
-        print(f"::{self.decrypt(c)}")
         decrypted_in_bytes = utils.long_to_bytes(self.decrypt(c))
-        return decrypted_in_bytes.decode()
+        return decrypted_in_bytes
     
 def __call__():
     return RSA()
