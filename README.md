@@ -5,9 +5,9 @@
 Đây là bài tập lớn của môn Mật mã và An ninh mạng (CO3069) - Hiện thực hệ mã RSA trên Python.
 
 Thành viên:
-- Đặng Dương Minh Nhật - 2110416
-- Lìu Ngọc Yến - 2115373
-- Huỳnh Hữu Tín - 2110584
+- Phan Trần Minh Đạt - 2111025
+- Huỳnh Tấn Sỹ - 2112205
+- Nguyễn Trường Thịnh - 2110564
 
 ## Getting Start
 
@@ -15,7 +15,7 @@ Thành viên:
 
 Clone the Repository
    ```sh
-   git clone https://github.com/dangduongminhnhat/mmanm_assignment.git
+   git clone https://github.com/datptm2003/Assignment_MMANM.git
    cd mmanm_assignment
    ```
 
@@ -23,5 +23,3 @@ Clone the Repository
 ```sh
 python main.py
 ```
-## Giao diện demo
-![Testing program](/images/demo.PNG "Demo picture.")
