@@ -98,7 +98,7 @@ class RSA():
         #     ciphertext = ciphertext.encode()
         # c = utils.bytes_to_long(ciphertext)
         decrypted_in_bytes = utils.long_to_bytes(self.decrypt(c))
-        return decrypted_in_bytes
+        return decrypted_in_bytes.decode()
     
 def __call__():
     return RSA()
